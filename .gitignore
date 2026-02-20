@@ -1,0 +1,25 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.python-version
+uv.lock
+
+# App-specific data & config
+temp_images/
+config/config.json
+data/*.json
+!data/.gitkeep
+
+# Project docs
+doc/system_flow.md
+
+# OS specific files
+.DS_Store
+Thumbs.db

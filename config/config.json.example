@@ -1,0 +1,40 @@
+{
+    "common": {
+        "lm_studio_base_url": "http://localhost:1234/v1",
+        "llm_model": "qwen/qwen3-vl-8b",
+        "temp_directory": "temp_images",
+        "keep_temp_files": false,
+        "history_file": "data/history.json"
+    },
+    "summarizer": {
+        "pdf": {
+            "input_directory": "/path/to/your/scansnap/home/pdf",
+            "auto_rename": true,
+            "auto_copy": true,
+            "destination_directory": "/path/to/your/obsidian/vault/ScanData/PDFs"
+        },
+        "jpeg": {
+            "input_directory": "/path/to/your/scansnap/home/jpeg",
+            "auto_rename": true,
+            "auto_copy": true,
+            "destination_directory": "/path/to/your/obsidian/vault/ScanData/Images"
+        },
+        "markdown_output": {
+            "destination_directory": "/path/to/your/obsidian/vault/ScanData/ScanSnapHome"
+        },
+        "ai_analysis": {
+            "enable_categorization": false,
+            "category_rules": {
+                "01_資産・ライフマネジメント": ["銀行", "保険", "証券", "税金", "給与", "年金", "契約書", "領収書"],
+                "02_住まい・不動産": ["不動産", "マンション", "修繕", "管理組合", "電気", "ガス", "水道"],
+                "03_趣味・娯楽": ["模型", "旅", "展覧会", "映画", "イベント"],
+                "04_仕事・キャリア": ["名刺", "広報", "研修", "報告書"],
+                "99_過去・その他": ["その他", "不明"]
+            },
+            "summaries": {
+                "pdf": "あなたは優秀なドキュメント解析アシスタントです。提供されたPDFの各ページ画像をもとに、内容を日本語で要約してください。...",
+                "jpeg": "あなたは画像解析アシスタントです。提供されたJPEG画像から書類の内容を読み取り、日本語で要約してください。..."
+            }
+        }
+    }
+}

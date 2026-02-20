@@ -1,0 +1,11 @@
+[project]
+name = "scansnap-to-obsidian"
+version = "0.1.0"
+description = "ScanSnap書類をAI(Vision LLM)で要約し、Obsidianへ自動取り込みするツール群"
+readme = "README.md"
+authors = [{ name = "Your Name", email = "your.email@example.com" }]
+requires-python = ">=3.11"
+dependencies = [
+    "pymupdf>=1.24.0",
+    "openai>=1.0.0",
+]
