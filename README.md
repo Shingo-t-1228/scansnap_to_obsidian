@@ -81,11 +81,6 @@ uv run src/scansnap_to_obsidian.py
 uv run src/obsidian_ocr_enhancer.py
 ```
 
-### 3. メンテナンス（一括リネーム等）
-```powershell
-uv run maintenance/maintenance_rename_pdf.py --execute
-```
-
 ## 注意事項
 - **Visionモデル必須**: 画像を解析するため、マルチモーダル対応モデルが必要です（LM Studio等で `qwen/qwen3-vl-8b` などを推奨）。
 - **APIコスト/負荷**: 全ページOCRを実行する場合、ページ数に応じた処理時間と負荷が発生します。
